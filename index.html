@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>canvas 1</title>
+</head>
+<body>
+  <canvas id="canvas" width="450" height="450"></canvas>
+  <script type="text/javascript">
+  //Reproduire la maison en utilisant uniquement les fonctions stroke() ou fill().
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  //debut du chemin du toit enfin j'espere
+  ctx.beginPath();
+  //point de depard
+  ctx.moveTo(140,70);
+  //trait de droite
+  ctx.lineTo(210,140);
+  //trait de gauche
+  ctx.lineTo(70,140);
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  //colori l'interieure
+  ctx.fillStyle = "#D38435";
+  ctx.fill();
+  //le rectangle
+  ctx.beginPath();
+  //point haut gauche
+  ctx.moveTo(70,140);
+  //bas gauche
+  ctx.lineTo(70,270);
+  //bas droite
+  ctx.lineTo(210,270);
+  //haut droite
+  ctx.lineTo(210,140);
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  ctx.fillStyle = "#a4d7e7";
+  ctx.fill();
+  //premiere fenetre
+  ctx.beginPath();
+  //point haut gauche
+  ctx.moveTo(80,150);
+  //bas gauche
+  ctx.lineTo(80,170);
+  //bas droite
+  ctx.lineTo(100,170);
+  //haut droite
+  ctx.lineTo(100,150);
+  //deniere ligne ferme le contour
+  ctx.lineTo(80,150);
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fill();
+  //deuxieme fenetre
+  ctx.beginPath();
+  //point haut gauche
+  ctx.moveTo(190,150);
+  //bas gauche
+  ctx.lineTo(190,170);
+  //bas droite
+  ctx.lineTo(170,170);
+  //haut droite
+  ctx.lineTo(170,150);
+  //deniere ligne ferme le contour
+  ctx.lineTo(190,150);
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fill();
+  //porte
+  ctx.beginPath();
+  //point haut gauche
+  ctx.moveTo(120,230);
+  //bas gauche
+  ctx.lineTo(120,270);
+  //bas droite
+  ctx.lineTo(150,270);
+  //haut droite
+  ctx.lineTo(150,230);
+  //deniere ligne ferme le contour
+  ctx.lineTo(120,230);
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+  ctx.fillStyle = "#C9C9C9";
+  ctx.fill();
+  </script>
+</body>
+</html>
